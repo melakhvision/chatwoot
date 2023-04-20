@@ -7,7 +7,7 @@
     }"
   >
     <div v-if="!isEmail" v-dompurify-html="message" class="text-content" />
-    <letter v-else class="text-content" :html="message" />
+    <letter v-else class="text-content" :html="formatText" />
     <button
       v-if="showQuoteToggle"
       class="quoted-text--button"
@@ -61,6 +61,9 @@ export default {
         return false;
       }
       return this.displayQuotedButton;
+    },
+    formatText(){
+      return this.message.replace(/\\/g, '');
     },
   },
   methods: {

@@ -19,7 +19,7 @@
           :message-content-attributes="messageContentAttributes"
           :message-id="message.id"
           :message-type="messageType"
-          :message="message.content"
+          :message="fixMessage"
         />
         <div
           v-if="hasAttachments"
@@ -113,6 +113,9 @@ export default {
     messageType() {
       const { message_type: type = 1 } = this.message;
       return type;
+    },
+    fixMessage(){
+      return this.message.content.replace(/\\/g, '');
     },
     contentType() {
       const { content_type: type = '' } = this.message;
