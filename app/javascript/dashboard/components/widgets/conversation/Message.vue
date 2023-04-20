@@ -24,7 +24,7 @@
         />
         <bubble-text
           v-if="data.content"
-          :message="message"
+          :message="formattedMessage"
           :is-email="isEmailContentType"
           :display-quoted-button="displayQuotedButton"
         />
@@ -251,6 +251,9 @@ export default {
           this.data.private
         ) + botMessageContent
       );
+    },
+    formattedMessage(){
+      return this.message.replace(/\\/g, '');
     },
     contextMenuEnabledOptions() {
       return {
