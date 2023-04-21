@@ -11,6 +11,7 @@ export const SDK_CSS = `
   transform: translateY(0);
   overflow: hidden !important;
   position: fixed !important;
+  left: 50%
   transition: opacity 0.2s linear, transform 0.25s linear;
   z-index: 2147483000 !important;
 }
@@ -26,7 +27,6 @@ export const SDK_CSS = `
   height: 100% !important;
   width: 100% !important;
   max-height: 100vh !important;
-
 }
 
 .woot-widget-holder.has-unread-view {
@@ -105,7 +105,7 @@ export const SDK_CSS = `
   font-size: 16px;
   font-weight: 500;
   justify-content: center;
-  align-items: center;
+  padding-right: 20px;
   width: auto !important;
 }
 
@@ -120,11 +120,11 @@ export const SDK_CSS = `
 }
 
 .woot-widget-bubble.woot-elements--left {
-  left: 20px;
+  right: 50%;
 }
 
 .woot-widget-bubble.woot-elements--right {
-  right: 50%;
+  left: 700px
 }
 
 .woot-widget-bubble:hover {
@@ -148,7 +148,7 @@ export const SDK_CSS = `
     left: 20px;
  }
   .woot-widget-holder.woot-elements--right {
-    right: 20px;
+    right: 600px;
  }
 }
 
