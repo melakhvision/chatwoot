@@ -123,7 +123,7 @@ export const SDK_CSS = `
 }
 
 .woot-widget-bubble.woot-elements--right {
-  right: 20px;
+  right: 50%;
 }
 
 .woot-widget-bubble:hover {
