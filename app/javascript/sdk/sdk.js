@@ -26,6 +26,7 @@ export const SDK_CSS = `
   height: 100% !important;
   width: 100% !important;
   max-height: 100vh !important;
+
 }
 
 .woot-widget-holder.has-unread-view {
@@ -104,7 +105,7 @@ export const SDK_CSS = `
   font-size: 16px;
   font-weight: 500;
   justify-content: center;
-  padding-right: 20px;
+  align-items: center;
   width: auto !important;
 }
 
