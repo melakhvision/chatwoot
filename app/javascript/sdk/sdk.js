@@ -11,7 +11,7 @@ export const SDK_CSS = `
   transform: translateY(0);
   overflow: hidden !important;
   position: fixed !important;
-  left: 50%
+  left: 50%;
   transition: opacity 0.2s linear, transform 0.25s linear;
   z-index: 2147483000 !important;
 }
@@ -124,7 +124,7 @@ export const SDK_CSS = `
 }
 
 .woot-widget-bubble.woot-elements--right {
-  left: 700px
+  left: 700px;
 }
 
 .woot-widget-bubble:hover {
@@ -145,10 +145,10 @@ export const SDK_CSS = `
 
 @media only screen and (min-width: 667px) {
   .woot-widget-holder.woot-elements--left {
-    left: 20px;
+    left: 50%px;
  }
   .woot-widget-holder.woot-elements--right {
-    right: 600px;
+    right: 50%px;
  }
 }
 
